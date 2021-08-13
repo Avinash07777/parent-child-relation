@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>parent child relation</title>
+        <style>
+            #p 
+            {
+                width: 600px;
+                height: 600px;
+                background-color: blue;
+                border: solid black 10px;
+            }
+            #c 
+            {
+                width: 300px;
+                height: 300px;
+                background-color: yellow;
+            }
+            #cc1 
+            {
+                width: 150px;
+                height: 150px;
+                background-color: orange;
+            }
+            #c2 
+            {
+                width: 300px;
+                height: 300px;
+                background-color: pink;
+                display: block;
+            }
+            #cc2 
+            {
+                display: block;
+                width: 150px;
+                height: 150px;
+                background-color: red;
+            }
+            #p:hover #c2
+            {
+                background-color:brown;
+                border-radius: 300px;
+            }
+            #p:hover #cc2
+            {
+                background-color:magenta;
+            }
+            #p:hover #c 
+            {
+                background-color: yellowgreen;
+                border-radius: 300px;
+            }
+            #p:hover #cc1 
+            {
+                background-color: teal;
+            }
+            div,span#c2,span#cc2,div#c,div#cc1 
+            {
+                font-weight: bold;
+                font-style: italic;
+                font-size: 50px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="p">
+            <span id="c2">
+                <span id="cc2">sub child</span>
+                child
+            </span>
+            <div id="c">
+                <div id="cc1">sub child</div>
+             child</div>  
+        </div>
+    </body>   
+</html>
